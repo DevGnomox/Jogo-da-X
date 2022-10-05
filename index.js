@@ -50,9 +50,15 @@ function checkWinner() {
     winCombinations.find((item) => {
         if(item.filter((i) => player1.includes(i).length === 3)) {
             alert("Player 1 Won");
+            score.player1++;
+            drawScore();
+            clearField();
             return item;
         } else if(item.filter((i) => player2.includes(i).length === 3)) {
             alert("Player 2 Won");
+            score.player2++;
+            drawScore();
+            clearField();
         }
         return
     })
