@@ -1,6 +1,6 @@
 const cell = document.querySelectorAll('.cell');
-const player1ScoreSpan = document.querySelector('.player1Score');
-const player2ScoreSpan = document.querySelector('.player2Score');
+const player1Score = document.querySelector('.player1Score');
+const player2Score = document.querySelector('.player2Score');
 const restartBtn = document.querySelector('.restart');
 
 const winCombinations = [
